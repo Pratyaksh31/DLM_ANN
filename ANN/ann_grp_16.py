@@ -211,8 +211,9 @@ fig_map.update_layout(
         showocean=True,
         oceancolor="lightblue",
         projection_type='natural earth'
-    )
-))
+    ) 
+)
+
 
 st.plotly_chart(fig_map)
 
