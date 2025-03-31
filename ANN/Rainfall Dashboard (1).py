@@ -203,7 +203,8 @@ fig_map.update_layout(
         oceancolor="lightblue",
         projection_type='natural earth'
     )
-))
+)  # ✅ Fixed
+
 
 st.plotly_chart(fig_map)
 
