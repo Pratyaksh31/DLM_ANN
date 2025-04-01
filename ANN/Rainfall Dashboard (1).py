@@ -22,6 +22,19 @@ def load_data(file_path):
     df = pd.read_csv(file_path, na_filter=False)
     return df
 
+import pandas as pd
+import streamlit as st
+
+# Correct raw URL of the CSV file from GitHub
+file_url = 'https://raw.githubusercontent.com/Pratyaksh31/DLM_ANN/main/ANN/weatherAUS.csv'
+
+# Load the CSV data into a DataFrame
+df = pd.read_csv(file_url)
+
+# Display the first few rows of the dataframe to verify
+st.write(df.head())
+
+
 # Preprocessing function (handle missing values and categorical features)
 @st.cache_data
 def preprocess_data(df):
